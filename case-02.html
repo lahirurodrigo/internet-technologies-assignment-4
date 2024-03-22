@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Case 2</title>
+    <link rel="stylesheet" href="assets/normalize.css">
+    <link rel="stylesheet" href="assets/fontawesome/css/all.min.css">
+
+    <style>
+
+        section {
+            width: 100vw;
+            height: 100vh;
+            position: relative;
+            background-color: blue;
+        }
+
+        section>div {
+            width: 200px;
+            height: 200px;
+            border-radius: 100%;
+            background-color: gray;
+
+            text-align: center;
+            color: white;
+
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+
+        section>div>h3 {
+            height: fit-content;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+
+        section>div::before {
+            content: "";
+            border: 10px solid white;
+            border-top-color: #ff253a;
+            border-radius: 100%;
+
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+
+        }
+
+        section>div:hover::before{
+            transform: rotate(360deg);
+            transition-duration: 3s;
+        }
+
+    </style>
+
+
+</head>
+<body>
+
+<section>
+    <div>
+        <h3>RWAD</h3>
+    </div>
+</section>
+
+<script src="assets/fontawesome/js/all.min.js"></script>
+
+</body>
+</html>
